@@ -1,0 +1,18 @@
+--------------------------ACCESO AL PORTAFOLIO----------------------------
+al ingresar al repositorio dirigite a la caperta 'Portafolio_git' y al estar alli ingresas en la carpeta 'vista' y le das clic al archivo html inicio.
+
+-------------CONEXION BASE DE DATOS Y VISTA DEL CRUD--------------
+(Carpeta 'CRUD_1' dentro de la carpeta 'Portafolio_git')
+Para que pueda funcionar bien crud tenga en cuento estos requisitos
+	1. Cambiar el nombre de la base de datos para iniciar la conexion
+	dentro de la carpeta 'modelo' en el archivo conexion
+	2. importas la tabla usuarios_dr a la base de datos a la cual 	iniciaste la conexion
+	3. Tener en cuenta la direccion donde va guardar los archivos 	para asi mismo modificar los enlaces para poder tener un buen 	funcionamiento del Portafolio y el crud
+Ejemplo: C:/xampp/htdocs/adsi2142329/Portafolio_git/vista/inicio.html
+	localhost/adsi2142329/Portafolio_git/CRUD_1/vista/index.php
+	
+
+
+
+
+

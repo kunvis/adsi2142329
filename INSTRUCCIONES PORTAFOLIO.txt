@@ -3,7 +3,7 @@ al ingresar al repositorio dirigite a la caperta 'Portafolio_git' y al estar all
 
 -------------CONEXION BASE DE DATOS Y VISTA DEL CRUD--------------
 (Carpeta 'CRUD_1' dentro de la carpeta 'Portafolio_git')
-Para que pueda funcionar bien crud tenga en cuento estos requisitos
+Para que pueda funcionar bien crud tenga encuento estos requisitos
 	1. Cambiar el nombre de la base de datos para iniciar la conexion
 	dentro de la carpeta 'modelo' en el archivo conexion
 	2. importas la tabla usuarios_dr a la base de datos a la cual 	iniciaste la conexion

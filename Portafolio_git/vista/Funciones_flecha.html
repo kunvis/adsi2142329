@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" href="../imagenes/icono.png" type="image/png"/>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio | Funciones Flecha</title>
+    <link rel="stylesheet" href="../estilos/ejercicios.css">
+</head>
+<body background="../imagenes/fondo.jpg">
+    <br><br>
+    <center>
+        <div class="div_body">
+            <strong><h2>Calcular numero mayor, menor, promedio y suma en consola</h2></strong>
+        <script src="../controlador/ejercicios_fun_flecha.js"></script><br>
+        <h3>Proceso</h3>
+        //Generar el array<br>
+        var vec=(array,tam)=>{<br>
+            for (let i = 0; i < tam; i++) {<br>
+                array.push(Math.round(Math.random()*100));<br>
+            }<br>
+            return array;<br>
+        } <br>
+        v=[];<br>
+        x=5;<br>
+        console.log('Array: '+vec(v,x));<br>
+        document.write('Array: '+vec(v,x));<br>
+
+        //Mayor del array<br>
+        var mayor=v=>{<br>
+            let may=0;<br>
+            for (let i = 0; i< v.length; i++) {<br>
+                if (v[i]>may) {		<br>
+                    posicion=i;<br>
+                    may=v[i];<br>
+                }<br>
+            }  <br>
+            return may; <br>
+        }<br>
+        console.log('El numero mayor de los elementos del array es: ' + mayor(v)+' y su posicion es: ' +posicion);<br>
+        document.write('El numero mayor de los elementos del array es: ' + mayor(v)+' y su posicion es: ' +posicion);<br>
+
+        //Menor del array<br>
+        var menor =v=>Math.min(...v);<br>
+        console.log('El numero menor es:'+menor(v));<br>
+        document.write('El numero menor es:'+menor(v));<br>
+
+        //Suma del array<br>
+        var sum=v=>{<br>
+            let suma=0;<br>
+            for (let i = 0; i< v.length; i++) {<br>
+                suma+=v[i];<br>
+            }  <br>
+            return suma; <br>
+        }<br>
+        console.log('La suma de los elementos del array es: ' + sum(v));<br>
+        document.write('La suma de los elementos del array es: ' + sum(v));<br>
+
+        //Promedio del array<br>
+        var prom=(v,x)=>{<br>
+            let promedio=0;<br>
+            for (let i = 0; i< v.length; i++) {<br>
+                promedio+=v[i]/x;<br>
+            }  <br>
+            return promedio; <br>
+        }<br>
+        console.log('El promedio de los elementos del array es: ' + prom(v,x));<br>
+        document.write('El promedio de los elementos del array es: ' + prom(v,x));<br>
+        </div>
+    </center>
+    <br>
+    <center>
+        <button>
+            <a href="inicio.html">Regresar</a>
+        </button>
+    </center>
+</body>
+</html>

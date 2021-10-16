@@ -1,0 +1,24 @@
+div{
+    background-color: #2d0749de;
+    width: 50%;
+    padding: 15px;
+    color: whitesmoke;
+}
+h2 {
+    font-size: 35px;
+}
+button {
+    background-color: grey;
+    padding: 10px;
+    border: 5px #2d0749a9;
+    border-radius: 25px;
+}
+    button a{
+        text-decoration: none;
+        color: whitesmoke;
+    }
+        button:hover {
+            background-color:orangered;
+            color:#2d0749a9;
+            border-radius: 15px;
+        }

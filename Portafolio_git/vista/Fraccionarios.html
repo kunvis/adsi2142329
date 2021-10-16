@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" href="../imagenes/icono.png" type="image/png"/>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio | Fracciones</title>
+    <link rel="stylesheet" href="../estilos/ejercicios.css">
+</head>
+<body background="../imagenes/fondo.jpg">
+    <center>
+        <div class="div_body">
+            <strong><h2>Fracciones con operaciones basicas en consola</h2></strong>
+            <script src="../controlador/ejercicios_fraccionarios.js"></script>
+            <u><h3>Mirar el resultado en consola</h3></u>
+            <h3>Proceso</h3>
+            var frac={<br>
+                n1:1,<br>
+                n2:4,<br>
+                d1:7,<br>
+                d2:3,<br>
+                suma:function(){<br>
+                    numeradorS1=this.n1 * this.d2;<br>
+                    numeradorS2=this.n2 * this.d1;<br>
+                    numeradorSF=numeradorS1 + numeradorS2;<br>
+                    denominadorS=this.d1 * this.d2;<br>
+                    return 'El resultado de la suma es '+ numeradorSF + ' / ' + denominadorS;<br>
+                },<br>
+                resta:function(){<br>
+                    numeradorR1=this.n1 * this.d2;<br>
+                    numeradorR2=this.n2 * this.d1;<br>
+                    numeradorRF=numeradorS1 - numeradorS2;<br>
+                    denominadorR=this.d1 * this.d2;<br>
+                    return 'El resultado de la resta es '+ numeradorRF + ' / ' + denominadorR;<br>
+                },<br>
+                multi:function(){<br>
+                    numeradorM1=this.n1 * this.n2;<br>
+                    numeradorM2=this.d1 * this.d2;<br>
+                    return 'El resultado de la multiplicacion es '+ numeradorM1 + ' / ' +numeradorM2;<br>
+                },<br>
+                divi:function(){<br>
+                    numeradorD1=this.n1 * this.d2;<br>
+                    numeradorD2=this.n2 * this.d1;<br>
+                    return 'El resultado de la division es '+ numeradorD1 + ' / ' +numeradorD2;<br>
+                }<br>
+            }<br>
+            
+            console.log(frac.suma());<br>
+            
+            console.log(frac.resta());<br>
+            
+            console.log(frac.multi());<br>
+            
+            console.log(frac.divi());<br>
+        
+        </div>
+    </center>
+    <br>
+    <center>
+        <button>
+            <a href="inicio.html">Regresar</a>
+        </button>
+    </center>
+</body>
+</html>

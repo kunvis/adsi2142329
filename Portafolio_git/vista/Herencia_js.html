@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" href="../imagenes/icono.png" type="image/png"/>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio | Herencia POO</title>
+    <link rel="stylesheet" href="../estilos/ejercicios.css">
+</head>
+<body background="../imagenes/fondo.jpg">
+    <br>
+    <center>
+        <div class="div_body">
+            <strong><h2>Herencia POO en consola</h2></strong>
+            <script src="../controlador/ejercicio_herencia_poo.js"></script>
+            <u><h3>Mirar el resultado en consola</h3></u>
+            <h3>Proceso</h3>
+                class Persona{<br>
+                    constructor(nombre,apellido){<br>
+                        this._nombre=nombre;<br>
+                        this._apellido=apellido;<br>
+                    }<br>
+                    get nombre (){<br>
+                        return this._nombre;<br>
+                    }<br>
+                    set nombre(nombre){<br>
+                        this._nombre=nombre;<br>
+                    }<br>
+                    get apellido (){<br>
+                        return this._apellido;<br>
+                    }<br>
+                    set apellido(apellido){<br>
+                        this._apellido=apellido;<br>
+                    }<br>
+                    NombreCompleto(){<br>
+                        return this._nombre + ' ' +this.apellido;<br>
+                    }<br>
+                }<br>
+                
+                class Aprendiz extends Persona {<br>
+                    constructor(nombre, apellido, ficha, programa) {<br>
+                        super(nombre, apellido);<br>
+                        this._ficha = ficha;<br>
+                        this._programa = programa;<br>
+                    }<br>
+                
+                    get ficha() {<br>
+                        return this._ficha;<br>
+                    }<br>
+                
+                    set ficha(ficha) {<br>
+                        this._ficha = ficha;<br>
+                    }<br>
+                
+                    get programa() {<br>
+                        return this._programa;<br>
+                    }<br>
+                
+                    set programa(programa) {<br>
+                        this._programa = programa;<br>
+                    }<br>
+                }<br>
+                var ob =new Persona('Darcy','Cumbe');<br>
+                console.log(ob.nombre + ' ' + ob.apellido);<br>
+                ap = new Aprendiz('Darcy', 'Gualtero', '2142329', 'ADSI');<br>
+                ap.nombre = 'Estefanny';<br>
+                
+                console.log(ap);<br>
+        </div>
+    </center>
+    <br>
+    <center>
+        <button>
+            <a href="inicio.html">Regresar</a>
+        </button>
+    </center>
+</body>
+</html>
